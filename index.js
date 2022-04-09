@@ -16,13 +16,25 @@ console.log(min());
 
 //Пункт 2
 
-const checkNumber = (validate) => {
+const checkNumber = () => {
   let num = '';
-  while (num.trim() === '' || isNaN(+num) || !validate(num)) num = prompt('Davay!');
+  while (num.trim() === '' || isNaN(+num)) num = prompt('Davay!');
 
   console.log('Ogo! Pravilno :)')
 }
 
+checkNumber();
+
+
+//Пункт 3
+
+const validateNumber = (validate) => {
+  let num = '';
+  while (num.trim() === '' || isNaN(+num) || !validate(num)) num = prompt('Davay teper s validate!');
+
+  console.log('Ogo! Voobshe pravilno (:')
+}
+
 const validate = (num) => num % 2 === 0;
 
-checkNumber(validate);
+validateNumber(validate);
