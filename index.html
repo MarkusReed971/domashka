@@ -9,6 +9,30 @@
 </head>
 <body>
   <h1>Domashka</h1>
+
+  <button onclick="handleMagic()">Magic!</button>
+
+  <h3>With transition:</h3>
+  <div class="wrapper">
+
+    <button onclick="handleMove()">Move</button>
+    <button onclick="handleResize()">Resize</button>
+    <button onclick="handleChain()">Chain</button>
+    <button onclick="handleChainWithPromise()">Chain (Promise)</button>
+    <button class="reset" onclick="handleReset1()">Reset</button>
+    <div class="circle" id="circle1"></div>
+  </div>
+
+  <h3>With setInterval:</h3>
+  <div class="wrapper">
+    <button onclick="handleMove2()">Move</button>
+    <button onclick="handleResize2()">Resize</button>
+    <button onclick="handleChain2()">Chain</button>
+    <button onclick="handleChainWithPromise2()">Chain (Promise)</button>
+    <button class="reset" onclick="handleReset2()">Reset</button>
+    <div class="circle" id="circle2"></div>
+  </div>
+
   <script src="index.js"></script>
 </body>
 </html>
