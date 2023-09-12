@@ -42,14 +42,17 @@ function Calc(initDigit) {
   this.digit = initDigit;
 
   this.add = (num) => this.digit += num
+  this.diff = (num) => this.digit -= num
+  this.mult = (num) => this.digit *= num
   this.div = (num) => this.digit /= num
 }
 
-const calc1 = new Calc(1);
+const superCalculator = new Calc(4);
 
 console.log('\nПункт 3');
-console.log(calc1.add(2));
-console.log(calc1.div(3));
+console.log(superCalculator.add(2));
+console.log(superCalculator.div(3));
+console.log(superCalculator.mult(5));
 
 
 //Пункт 4
